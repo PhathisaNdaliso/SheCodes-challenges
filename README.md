@@ -1,5 +1,5 @@
 # SheCodes-challenges
-projects created using my SheCodes worksops
+projects created using my SheCodes workshops
 
 Weather App
 This project is a simple weather app that displays the current temperature and weather forecast for Tokyo. The app allows users to change the city and temperature displayed by interacting with a button.
