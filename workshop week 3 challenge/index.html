@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Heaven</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+      
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(249, 213, 229, 0.8);
+            color: rgb(1, 1, 1);
+        }
+
+        header h1 {
+            
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            
+        }
+
+        #flavors {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+
+        .flavor-card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffcccb;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            vertical-align: top;
+        }
+
+        .flavor-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .flavor-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        #about {
+            padding: 50px;
+            background-color: rgba(249, 213, 229, 0.8);
+            text-align: center;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #ff4a3a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Ice Cream Heaven</h1>
+        <p>My ultimate destination for delicious ice cream!</p>
+    </header>
+
+    <section id="flavors">
+        <h2>My Favourite Flavors</h2>
+        <div class="flavor-card">
+            <img src="vanilla.jpg" alt="Vanilla Ice Cream">
+            <h3>Vanilla</h3>
+            <p>A classic favorite,</p>
+            <p> creamy and smooth.</p>
+        </div>
+        <div class="flavor-card">
+            <img src="chocolate.jpg" alt="Chocolate Ice Cream">
+            <h3>Chocolate</h3>
+            <p>Rich and indulgent,</p>
+            <p> perfect for chocolate lovers.</p>
+        </div>
+        <div class="flavor-card">
+            <img src="strawberry.jpg" alt="Strawberry Ice Cream">
+            <h3>Strawberry</h3>
+            <p>Sweet and fruity,</p>
+            <p> made with fresh strawberries.</p>
+        </div>
+        <div class="flavor-card">
+            <img src="mint.jpg" alt="Mint Ice Cream">
+            <h3>Mint</h3>
+            <p>Cool and refreshing, </p>
+            <p>with a hint of mint.</p>
+        </div>
+        <div class="flavor-card">
+            <img src="caramel.jpg" alt="Caramel Ice Cream">
+            <h3>Caramel</h3>
+            
+            <p>Rich caramel flavor,</p>
+             <p>perfect for a sweet treat.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Ice Cream</h2>
+        <p>
+            Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. 
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Ice_cream#:~:text=Ice%20cream%20is%20a%20frozen,added%20in%20addition%20to%20stabilizers." target="_blank" class="learn-more-btn">Learn More</a>
+    </section>
+
+    <footer>
+        <p>&copy; Coded by Phathisa Ndaliso. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Add a swipe gesture for touch devices
+        let startX;
+
+        document.getElementById('flavors').addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+
+        document.getElementById('flavors').addEventListener('touchmove', function(e) {
+            let touch = e.touches[0];
+            let change = startX - touch.clientX;
+            this.scrollLeft += change;
+            startX = touch.clientX;
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
