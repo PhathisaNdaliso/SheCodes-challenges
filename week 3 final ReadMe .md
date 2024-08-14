@@ -31,13 +31,13 @@ Welcome to the **Ice Cream Heaven** landing page repository! 🍦 This project i
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
-   ```bash
+   ```
    git clone 
    ```
    
 2. **Navigate to the project directory**:
-   ```bash
-   cd ice-cream-heaven
+   ```
+   workshop week 3 challenge 
    ```
 
 3. **Open the `index.html` file in your browser**:
@@ -51,8 +51,8 @@ Once the page is open in your browser, you can explore the different ice cream f
 
 Here's an overview of the project structure:
 
-```bash
-ice-cream-heaven/
+```
+workshop week 3 challenge/
 │
 ├── index.html         # The main HTML file for the landing page containg the css and js
 |                      #  images used in the project
@@ -79,7 +79,5 @@ Enjoy exploring Ice Cream Heaven! 🍨 If you have any questions or suggestions,
 
 ```
 
-### Instructions:
-- **Replace `** with your actual GitHub repository link if you're hosting this project on GitHub.
-- The project structure is an example; adjust it based on your actual file and folder names.
+
 
