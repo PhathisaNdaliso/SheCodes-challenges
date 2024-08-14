@@ -78,6 +78,7 @@ This project is open-source and available under the MIT License. Feel free to us
 Enjoy exploring Ice Cream Heaven! 🍨 If you have any questions or suggestions, feel free to reach out.
 
 ```
-
+email:phathisandali05@gmail.com
+linkedin : https://www.linkedin.com/in/phathisa-ndaliso/ 
 
 
