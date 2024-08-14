@@ -32,7 +32,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/ice-cream-heaven.git
+   git clone 
    ```
    
 2. **Navigate to the project directory**:
@@ -54,8 +54,8 @@ Here's an overview of the project structure:
 ```bash
 ice-cream-heaven/
 │
-├── index.html         # The main HTML file for the landing page containg the css and js 
-├── images/            # Folder containing images used in the project
+├── index.html         # The main HTML file for the landing page containg the css and js
+|                      #  images used in the project
 │   ├── background.jpg
 │   ├── vanilla.jpg
 │   ├── chocolate.jpg
