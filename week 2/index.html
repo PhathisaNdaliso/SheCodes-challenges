@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.e15ace8ccace5398a721ffec81f121de.js"></script>
+    <script  type="text/javascript" src="https://codesandbox.io/static/js/banner.d9cb10a38.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+   
+    <title>My weather application</title>
+  </head>
+  <style>
+    /* General reset and body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Weather App Container */
+
+.weather-app {
+    background: white;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+
+/* Header Styling */
+header {
+  margin-bottom: 25px;
+}
+
+/* Search bar styling */
+.search-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 75%;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 12px 20px;
+  background-color: #c25f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Main Section */
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* City and weather details */
+.current-city {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.current-details {
+  font-size: 15px;
+  color: #000000;
+}
+
+/* Temperature styling */
+.current-temperature {
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  color: #b462a5;
+}
+
+.current-temperature-icon {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.current-temperature-value {
+  font-weight: bold;
+}
+
+.current-temperature-unit {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #ad5aa3;
+}
+
+footer a {
+  color: #c25fae;
+  text-decoration: none;
+}
+
+  </style>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Paris</h1>
+            <p class="current-details">
+              Saturday 15:32, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value">24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+     
+        <!-- Footer -->
+        <footer>
+            <p>This project was coded by <a href="#">Phathisa Ndaliso</a> and is <a href="https://github.com/PhathisaNdaliso/SheCodes-challenges" target="_blank" rel="noopener noreferrer">open-sourced on GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
